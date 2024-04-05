@@ -1,4 +1,4 @@
-# Install script for directory: /Users/collinschuster/Desktop/Pico/HW2/blink
+# Install script for directory: /Users/collinschuster/Desktop/Pico/HW3/blink
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

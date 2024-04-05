@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.29.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/collinschuster/Desktop/Pico/HW2
+CMAKE_SOURCE_DIR = /Users/collinschuster/Desktop/Pico/HW3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/collinschuster/Desktop/Pico/HW2/build
+CMAKE_BINARY_DIR = /Users/collinschuster/Desktop/Pico/HW3/build
 
 # Utility rule file for ELF2UF2Build.
 
@@ -76,47 +76,47 @@ blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF
 blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 blink/CMakeFiles/ELF2UF2Build-complete: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E make_directory /Users/collinschuster/Desktop/Pico/HW2/build/blink/CMakeFiles
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW2/build/blink/CMakeFiles/ELF2UF2Build-complete
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E make_directory /Users/collinschuster/Desktop/Pico/HW3/build/blink/CMakeFiles
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW3/build/blink/CMakeFiles/ELF2UF2Build-complete
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-done
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/elf2uf2 && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/elf2uf2 && $(MAKE)
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: blink/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/elf2uf2 && /usr/local/Cellar/cmake/3.29.0/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make "-GUnix Makefiles" -S /Users/collinschuster/Desktop/Pico/pico-sdk/tools/elf2uf2 -B /Users/collinschuster/Desktop/Pico/HW2/build/elf2uf2
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/elf2uf2 && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/elf2uf2 && /usr/local/Cellar/cmake/3.29.0/bin/cmake -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make "-GUnix Makefiles" -S /Users/collinschuster/Desktop/Pico/pico-sdk/tools/elf2uf2 -B /Users/collinschuster/Desktop/Pico/HW3/build/elf2uf2
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/elf2uf2 && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-source_dirinfo.txt
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/elf2uf2 && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/elf2uf2 && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -Dcfgdir= -P /Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -Dcfgdir= -P /Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch-info.txt
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update-info.txt
 blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update: blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No update step for 'ELF2UF2Build'"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E echo_append
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && /usr/local/Cellar/cmake/3.29.0/bin/cmake -E touch /Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
 
 ELF2UF2Build: blink/CMakeFiles/ELF2UF2Build
 ELF2UF2Build: blink/CMakeFiles/ELF2UF2Build-complete
@@ -135,10 +135,10 @@ blink/CMakeFiles/ELF2UF2Build.dir/build: ELF2UF2Build
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/build
 
 blink/CMakeFiles/ELF2UF2Build.dir/clean:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build/blink && $(CMAKE_COMMAND) -P CMakeFiles/ELF2UF2Build.dir/cmake_clean.cmake
+	cd /Users/collinschuster/Desktop/Pico/HW3/build/blink && $(CMAKE_COMMAND) -P CMakeFiles/ELF2UF2Build.dir/cmake_clean.cmake
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/clean
 
 blink/CMakeFiles/ELF2UF2Build.dir/depend:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/collinschuster/Desktop/Pico/HW2 /Users/collinschuster/Desktop/Pico/HW2/blink /Users/collinschuster/Desktop/Pico/HW2/build /Users/collinschuster/Desktop/Pico/HW2/build/blink /Users/collinschuster/Desktop/Pico/HW2/build/blink/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/collinschuster/Desktop/Pico/HW3 /Users/collinschuster/Desktop/Pico/HW3/blink /Users/collinschuster/Desktop/Pico/HW3/build /Users/collinschuster/Desktop/Pico/HW3/build/blink /Users/collinschuster/Desktop/Pico/HW3/build/blink/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/depend
 

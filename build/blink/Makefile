@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.29.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/collinschuster/Desktop/Pico/HW2
+CMAKE_SOURCE_DIR = /Users/collinschuster/Desktop/Pico/HW3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/collinschuster/Desktop/Pico/HW2/build
+CMAKE_BINARY_DIR = /Users/collinschuster/Desktop/Pico/HW3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles /Users/collinschuster/Desktop/Pico/HW2/build/blink//CMakeFiles/progress.marks
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/collinschuster/Desktop/Pico/HW2/build/CMakeFiles 0
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles /Users/collinschuster/Desktop/Pico/HW3/build/blink//CMakeFiles/progress.marks
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/collinschuster/Desktop/Pico/HW3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/clean
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/preinstall
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/preinstall
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 blink/CMakeFiles/blink.dir/rule:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/CMakeFiles/blink.dir/rule
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/CMakeFiles/blink.dir/rule
 .PHONY : blink/CMakeFiles/blink.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ blink: blink/CMakeFiles/blink.dir/rule
 
 # fast build rule for target.
 blink/fast:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/build
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/build
 .PHONY : blink/fast
 
 # Convenience name for target.
 blink/CMakeFiles/ELF2UF2Build.dir/rule:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/CMakeFiles/ELF2UF2Build.dir/rule
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink/CMakeFiles/ELF2UF2Build.dir/rule
 .PHONY : blink/CMakeFiles/ELF2UF2Build.dir/rule
 
 # Convenience name for target.
@@ -141,15 +141,447 @@ ELF2UF2Build: blink/CMakeFiles/ELF2UF2Build.dir/rule
 
 # fast build rule for target.
 ELF2UF2Build/fast:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/ELF2UF2Build.dir/build.make blink/CMakeFiles/ELF2UF2Build.dir/build
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/ELF2UF2Build.dir/build.make blink/CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.obj: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.i: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.s: Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -157,7 +589,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -165,7 +597,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -173,7 +605,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.obj: U
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -181,7 +613,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.i: Use
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -189,7 +621,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.s: Use
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -197,7 +629,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.obj: Users
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -205,7 +637,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.i: Users/c
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -213,7 +645,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.s: Users/c
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -221,7 +653,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.obj: Users/c
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -229,7 +661,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.i: Users/col
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -237,7 +669,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.s: Users/col
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -245,7 +677,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.obj: Users/
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.i
@@ -253,7 +685,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.i: Users/co
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.s
@@ -261,7 +693,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.s: Users/co
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -269,7 +701,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.o
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -277,7 +709,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.i
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -285,7 +717,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.s
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -293,7 +725,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.obj: Us
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -301,7 +733,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.i: User
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -309,7 +741,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.s: User
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -317,7 +749,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.obj: Users
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -325,7 +757,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.i: Users/c
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -333,7 +765,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.s: Users/c
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -341,7 +773,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.obj: Users
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -349,7 +781,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.i: Users/c
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -357,15 +789,39 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.s: Users/c
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -373,7 +829,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.i
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -381,7 +837,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.s
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -389,7 +845,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -397,7 +853,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -405,7 +861,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -413,15 +869,39 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divid
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -429,7 +909,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: 
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -437,7 +917,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: 
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -445,7 +925,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: 
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -453,7 +933,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Us
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -461,7 +941,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Us
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -469,7 +949,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handl
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -477,7 +957,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: 
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -485,7 +965,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Us
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -493,7 +973,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Us
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -501,7 +981,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -509,7 +989,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: 
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -517,7 +997,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: 
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -525,7 +1005,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.o
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -533,7 +1013,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.i
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -541,7 +1021,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.s
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -549,7 +1029,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -557,7 +1037,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: 
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -565,7 +1045,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: 
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -573,7 +1053,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -581,7 +1061,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: 
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -589,7 +1069,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: 
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -597,7 +1077,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watc
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -605,7 +1085,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watc
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -613,7 +1093,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watc
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -621,7 +1101,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -629,7 +1109,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: 
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -637,7 +1117,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: 
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -645,7 +1125,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_a
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -653,7 +1133,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -661,7 +1141,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -669,7 +1149,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -677,7 +1157,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.o
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -685,7 +1165,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aea
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -693,7 +1173,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_ini
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -701,7 +1181,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_ini
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -709,7 +1189,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_ini
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -717,7 +1197,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_mat
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -725,7 +1205,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_mat
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -733,7 +1213,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_mat
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -741,15 +1221,39 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -757,7 +1261,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -765,7 +1269,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -773,7 +1277,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -781,7 +1285,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -789,7 +1293,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -797,7 +1301,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -805,7 +1309,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_ro
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -813,7 +1317,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_in
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -821,7 +1325,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_mallo
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -829,7 +1333,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_mallo
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -837,7 +1341,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_mallo
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -845,7 +1349,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_a
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -853,7 +1357,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -861,7 +1365,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -869,7 +1373,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -877,7 +1381,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -885,7 +1389,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.i: 
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -893,7 +1397,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.s: 
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -901,7 +1405,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -909,7 +1413,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -917,7 +1421,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -925,7 +1429,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/bin
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -933,7 +1437,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/bin
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -941,7 +1445,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/bin
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -949,7 +1453,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -957,7 +1461,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -965,7 +1469,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -973,7 +1477,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -981,7 +1485,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: 
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -989,7 +1493,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Us
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -997,39 +1501,87 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Us
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
 
 # target to build an object file
-Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
-Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
 
 # target to preprocess a source file
-Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
-Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
 
 # target to generate assembly for a file
-Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 
 # target to build an object file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1037,7 +1589,7 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: 
 
 # target to preprocess a source file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1045,15 +1597,39 @@ Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: 
 
 # target to generate assembly for a file
 Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
+
+# target to build an object file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
+
+# target to preprocess a source file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
+
+# target to generate assembly for a file
+Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+.PHONY : Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 blink.obj: blink.c.obj
 .PHONY : blink.obj
 
 # target to build an object file
 blink.c.obj:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/blink.c.obj
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/blink.c.obj
 .PHONY : blink.c.obj
 
 blink.i: blink.c.i
@@ -1061,7 +1637,7 @@ blink.i: blink.c.i
 
 # target to preprocess a source file
 blink.c.i:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/blink.c.i
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/blink.c.i
 .PHONY : blink.c.i
 
 blink.s: blink.c.s
@@ -1069,7 +1645,7 @@ blink.s: blink.c.s
 
 # target to generate assembly for a file
 blink.c.s:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/blink.c.s
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(MAKE) $(MAKESILENT) -f blink/CMakeFiles/blink.dir/build.make blink/CMakeFiles/blink.dir/blink.c.s
 .PHONY : blink.c.s
 
 # Help Target
@@ -1082,6 +1658,60 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ELF2UF2Build"
 	@echo "... blink"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.s"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1109,6 +1739,9 @@ help:
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_util/queue.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.s"
@@ -1116,6 +1749,9 @@ help:
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
@@ -1157,6 +1793,9 @@ help:
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
@@ -1189,12 +1828,21 @@ help:
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
-	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
+	@echo "... Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
 	@echo "... blink.obj"
 	@echo "... blink.i"
 	@echo "... blink.s"
@@ -1209,6 +1857,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/collinschuster/Desktop/Pico/HW2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/collinschuster/Desktop/Pico/HW3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

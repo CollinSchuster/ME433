@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/CMakeFiles/ELF2UF2Build"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/CMakeFiles/ELF2UF2Build"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/CMakeFiles/ELF2UF2Build.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/CMakeFiles/ELF2UF2Build.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/CMakeFiles/ELF2UF2Build-complete.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/CMakeFiles/ELF2UF2Build-complete.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule"
 		},
 		{
-			"file" : "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule"
+			"file" : "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule"
 		}
 	],
 	"target" : 

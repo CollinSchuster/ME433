@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/Users/collinschuster/Desktop/Pico/pico-sdk/tools/elf2uf2"
-  "/Users/collinschuster/Desktop/Pico/HW2/build/elf2uf2"
-  "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2"
-  "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/tmp"
-  "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp"
-  "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src"
-  "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp"
+  "/Users/collinschuster/Desktop/Pico/HW3/build/elf2uf2"
+  "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2"
+  "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/tmp"
+  "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp"
+  "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src"
+  "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/collinschuster/Desktop/Pico/HW2/build/blink/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/collinschuster/Desktop/Pico/HW3/build/blink/elf2uf2/src/ELF2UF2Build-stamp${cfgdir}") # cfgdir has leading slash
 endif()

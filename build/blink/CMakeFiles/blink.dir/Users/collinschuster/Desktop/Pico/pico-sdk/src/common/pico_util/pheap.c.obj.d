@@ -30,9 +30,9 @@ blink/CMakeFiles/blink.dir/Users/collinschuster/Desktop/Pico/pico-sdk/src/common
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
- /Users/collinschuster/Desktop/Pico/HW2/build/generated/pico_base/pico/version.h \
+ /Users/collinschuster/Desktop/Pico/HW3/build/generated/pico_base/pico/version.h \
  /Users/collinschuster/Desktop/Pico/pico-sdk/src/common/pico_base/include/pico/config.h \
- /Users/collinschuster/Desktop/Pico/HW2/build/generated/pico_base/pico/config_autogen.h \
+ /Users/collinschuster/Desktop/Pico/HW3/build/generated/pico_base/pico/config_autogen.h \
  /Users/collinschuster/Desktop/Pico/pico-sdk/src/boards/include/boards/pico.h \
  /Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /Users/collinschuster/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
